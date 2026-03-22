@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace QuanLyQuanKaraoke.Data
 {
@@ -14,7 +15,7 @@ namespace QuanLyQuanKaraoke.Data
         public int KhachHangID {  get; set; }
         public int NhanVienID { get; set; }
         public DateTime ThoiGianBatDau { get; set; }
-        public DateTime ThoiGianKetThuc { get; set; }
+        public DateTime? ThoiGianKetThuc { get; set; }
         public virtual Phong Phong { get; set; } = null!;
         public virtual KhachHang KhachHang { get; set; } = null!;
         public virtual NhanVien NhanVien { get; set; } = null!;
@@ -25,4 +26,21 @@ namespace QuanLyQuanKaraoke.Data
 
 
     }
+    [NotMapped]
+    public class DanhSachDatPhong
+    {
+        public int ID { get; set; }
+        public int PhongID { get; set; }
+        public string TenPhong { get; set; }
+        public int KhachHangID { get; set; }
+        public string TenKhachHang { get; set; }
+        public int NhanVienID { get; set; }
+        public string TenNhanVien { get; set; }
+        public DateTime ThoiGianBatDau { get; set; }
+        public DateTime? ThoiGianKetThuc { get; set; }
+        
+        
+        
+    }
+
 }

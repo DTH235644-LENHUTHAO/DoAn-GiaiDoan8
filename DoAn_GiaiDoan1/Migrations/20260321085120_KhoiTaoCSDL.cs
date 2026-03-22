@@ -117,7 +117,7 @@ namespace QuanLyQuanKaraoke.Migrations
                     KhachHangID = table.Column<int>(type: "int", nullable: false),
                     NhanVienID = table.Column<int>(type: "int", nullable: false),
                     ThoiGianBatDau = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    ThoiGianKetThuc = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    ThoiGianKetThuc = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -203,8 +203,7 @@ namespace QuanLyQuanKaraoke.Migrations
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     HoaDonID = table.Column<int>(type: "int", nullable: false),
-                    NoiDung = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    SoLuong = table.Column<int>(type: "int", nullable: false),
+                    GhiChu = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DonGia = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     ThanhTien = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },

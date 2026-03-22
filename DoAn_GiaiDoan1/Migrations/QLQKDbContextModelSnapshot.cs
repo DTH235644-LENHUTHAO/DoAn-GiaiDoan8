@@ -33,14 +33,11 @@ namespace QuanLyQuanKaraoke.Migrations
                     b.Property<decimal>("DonGia")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("HoaDonID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("NoiDung")
+                    b.Property<string>("GhiChu")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SoLuong")
+                    b.Property<int>("HoaDonID")
                         .HasColumnType("int");
 
                     b.Property<decimal>("ThanhTien")
@@ -73,7 +70,7 @@ namespace QuanLyQuanKaraoke.Migrations
                     b.Property<DateTime>("ThoiGianBatDau")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("ThoiGianKetThuc")
+                    b.Property<DateTime?>("ThoiGianKetThuc")
                         .HasColumnType("datetime2");
 
                     b.HasKey("ID");

@@ -27,8 +27,9 @@ namespace QuanLyQuanKaraoke.Forms
         frmPhong phong = null;
         frmLoaiPhong loaiPhong = null;
         frmDangNhap dangNhap = null;
+        frmDanhSachPhong danhsachPhong = null;
         string TenNhanVien = "";
-
+        public static int NVID = 0;
         private void mnuNhanVien_Click(object sender, EventArgs e)
         {
             if (nhanVien == null || nhanVien.IsDisposed)
@@ -144,9 +145,10 @@ namespace QuanLyQuanKaraoke.Forms
                         if (BCrypt.Net.BCrypt.Verify(matKhau, nhanVien.MatKhau))
                         {
                             TenNhanVien = nhanVien.TenNV;
+                            NVID = nhanVien.ID;
                             if (nhanVien.ChucVu == "Quản lý")
                                 QuyenQuanLy();
-                            else if (nhanVien.ChucVu == "Quản lý")
+                            else if (nhanVien.ChucVu == "Nhân viên")
                                 QuyenNhanVien();
                             else
                                 ChuaDangNhap();
@@ -237,6 +239,18 @@ namespace QuanLyQuanKaraoke.Forms
                 child.Close();
             }
             ChuaDangNhap();
+        }
+
+        private void mnuDanhSachPhong_Click(object sender, EventArgs e)
+        {
+            if (danhsachPhong  == null || danhsachPhong.IsDisposed)
+            {
+                danhsachPhong = new frmDanhSachPhong();
+                danhsachPhong.MdiParent = this;
+                danhsachPhong.Show();
+            }
+            else
+                danhsachPhong.Activate();
         }
     }
 }
