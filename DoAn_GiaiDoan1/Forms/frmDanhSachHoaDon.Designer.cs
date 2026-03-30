@@ -31,7 +31,6 @@
             groupBox1 = new GroupBox();
             btnThanhToan = new Button();
             groupBox2 = new GroupBox();
-            sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             dataGridView1 = new DataGridView();
             ID = new DataGridViewTextBoxColumn();
             DatPhongID = new DataGridViewTextBoxColumn();
@@ -46,6 +45,7 @@
             ThoiGianLap = new DataGridViewTextBoxColumn();
             TongTien = new DataGridViewTextBoxColumn();
             XemChiTiet = new DataGridViewLinkColumn();
+            sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -62,7 +62,7 @@
             // 
             // btnThanhToan
             // 
-            btnThanhToan.Location = new Point(1381, 56);
+            btnThanhToan.Location = new Point(1706, 56);
             btnThanhToan.Name = "btnThanhToan";
             btnThanhToan.Size = new Size(188, 46);
             btnThanhToan.TabIndex = 0;
@@ -78,11 +78,6 @@
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Hóa đơn đã lập";
-            // 
-            // sqlCommand1
-            // 
-            sqlCommand1.CommandTimeout = 30;
-            sqlCommand1.EnableOptimizedParameterBinding = false;
             // 
             // dataGridView1
             // 
@@ -189,6 +184,11 @@
             XemChiTiet.HeaderText = "Chi tiết";
             XemChiTiet.MinimumWidth = 10;
             XemChiTiet.Name = "XemChiTiet";
+            // 
+            // sqlCommand1
+            // 
+            sqlCommand1.CommandTimeout = 30;
+            sqlCommand1.EnableOptimizedParameterBinding = false;
             // 
             // frmDanhSachHoaDon
             // 

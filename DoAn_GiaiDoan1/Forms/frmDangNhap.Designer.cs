@@ -35,6 +35,8 @@
             txtMatKhau = new TextBox();
             btnDangNhap = new Button();
             btnHuyBo = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -84,16 +86,19 @@
             // 
             // btnDangNhap
             // 
+            btnDangNhap.BackColor = Color.White;
+            btnDangNhap.ForeColor = Color.DodgerBlue;
             btnDangNhap.Location = new Point(840, 508);
             btnDangNhap.Name = "btnDangNhap";
             btnDangNhap.Size = new Size(186, 70);
             btnDangNhap.TabIndex = 5;
             btnDangNhap.Text = "Đăng nhập";
-            btnDangNhap.UseVisualStyleBackColor = true;
+            btnDangNhap.UseVisualStyleBackColor = false;
             btnDangNhap.Click += btnDangNhap_Click;
             // 
             // btnHuyBo
             // 
+            btnHuyBo.ForeColor = Color.Red;
             btnHuyBo.Location = new Point(1058, 508);
             btnHuyBo.Name = "btnHuyBo";
             btnHuyBo.Size = new Size(178, 70);
@@ -102,11 +107,22 @@
             btnHuyBo.UseVisualStyleBackColor = true;
             btnHuyBo.Click += btnHuyBo_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._lock;
+            pictureBox1.Location = new Point(138, 71);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(442, 499);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
             // frmDangNhap
             // 
             AutoScaleDimensions = new SizeF(19F, 36F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1372, 697);
+            Controls.Add(pictureBox1);
             Controls.Add(btnHuyBo);
             Controls.Add(btnDangNhap);
             Controls.Add(txtMatKhau);
@@ -118,6 +134,7 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "frmDangNhap";
             Text = "Đăng nhập";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -131,5 +148,6 @@
         public TextBox txtMatKhau;
         private Button btnDangNhap;
         private Button btnHuyBo;
+        private PictureBox pictureBox1;
     }
 }

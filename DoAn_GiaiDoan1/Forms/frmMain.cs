@@ -1,5 +1,6 @@
 ﻿using DocumentFormat.OpenXml.InkML;
 using QuanLyQuanKaraoke.Data;
+using QuanLyQuanKaraoke.Reports;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,6 +31,7 @@ namespace QuanLyQuanKaraoke.Forms
         frmDanhSachPhong danhsachPhong = null;
         frmDatPhong datPhong = null;
         frmDanhSachHoaDon danhsachhoaDon = null;
+        frmThongKeDoanhThu thongKeDoanhThu = null;
         string TenNhanVien = "";
         public static int NVID = 0;
         private void mnuNhanVien_Click(object sender, EventArgs e)
@@ -269,7 +271,7 @@ namespace QuanLyQuanKaraoke.Forms
 
         private void mnuDanhSachHoaDon_Click(object sender, EventArgs e)
         {
-            if (danhsachhoaDon == null || datPhong.IsDisposed)
+            if (danhsachhoaDon == null || danhsachhoaDon.IsDisposed)
             {
                 danhsachhoaDon = new frmDanhSachHoaDon();
                 danhsachhoaDon.MdiParent = this;
@@ -277,6 +279,18 @@ namespace QuanLyQuanKaraoke.Forms
             }
             else
                 danhsachhoaDon.Activate();
+        }
+
+        private void mnuThongKeDoanhThu_Click(object sender, EventArgs e)
+        {
+            if (thongKeDoanhThu == null || thongKeDoanhThu.IsDisposed)
+            {
+                thongKeDoanhThu = new frmThongKeDoanhThu();
+                thongKeDoanhThu.MdiParent = this;
+                thongKeDoanhThu.Show();
+            }
+            else
+                thongKeDoanhThu.Activate();
         }
     }
 }

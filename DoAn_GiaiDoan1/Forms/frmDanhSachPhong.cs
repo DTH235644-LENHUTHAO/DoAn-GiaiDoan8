@@ -46,7 +46,7 @@ namespace QuanLyQuanKaraoke.Forms
             foreach (var p in dsPhong)
             {
                 Panel panel = new Panel();
-                panel.Size = new Size(200, 250);
+                panel.Size = new Size(200, 315);
                 panel.Margin = new Padding(10);
                 panel.Tag = p.ID;
                 panel.BorderStyle = BorderStyle.FixedSingle;
@@ -54,7 +54,7 @@ namespace QuanLyQuanKaraoke.Forms
                 // ===== Picture =====
                 PictureBox pic = new PictureBox();
                 pic.Dock = DockStyle.Top;
-                pic.Height = 100;
+                pic.Height = 200;
                 pic.SizeMode = PictureBoxSizeMode.StretchImage;
 
                 string path = Path.Combine(Application.StartupPath, "Images", p.HinhAnh);

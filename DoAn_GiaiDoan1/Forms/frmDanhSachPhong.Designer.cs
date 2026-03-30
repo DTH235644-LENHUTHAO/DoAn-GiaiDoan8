@@ -29,30 +29,18 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            btnMoPhong = new Button();
             groupBox2 = new GroupBox();
             panelPhong = new FlowLayoutPanel();
-            groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(btnMoPhong);
             groupBox1.Location = new Point(11, 0);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(1322, 126);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
-            // 
-            // btnMoPhong
-            // 
-            btnMoPhong.Location = new Point(1112, 52);
-            btnMoPhong.Name = "btnMoPhong";
-            btnMoPhong.Size = new Size(185, 46);
-            btnMoPhong.TabIndex = 0;
-            btnMoPhong.Text = "Mở phòng";
-            btnMoPhong.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -85,14 +73,12 @@
             Name = "frmDanhSachPhong";
             Text = "Danh sách phòng";
             Load += frmDanhSachPhong_Load;
-            groupBox1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
         private GroupBox groupBox1;
-        private Button btnMoPhong;
         private GroupBox groupBox2;
         private FlowLayoutPanel panelPhong;
     }

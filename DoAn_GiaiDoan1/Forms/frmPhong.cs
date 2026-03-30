@@ -24,8 +24,9 @@ namespace QuanLyQuanKaraoke.Forms
         QLQKDbContext context = new QLQKDbContext();
         bool xulyThem = false;
         int id;
-        string imagesFolder = Application.StartupPath.Replace("bin\\Debug\\net5.0-windows", "Images");
-        //string imagesFolder = Path.Combine(Application.StartupPath, "image");
+        //string imagesFolder = Application.StartupPath.Replace("bin\\Debug\\net5.0-windows", "Images");
+        string imagesFolder = Path.Combine(Application.StartupPath, "Images");
+        //string imagesFolder = Application.StartupPath.Replace("bin\\Debug\\net8.0-windows", "Images");
         string hinhAnhTam = "";
 
         private void BatTatChucNang(bool giaTri)
@@ -103,8 +104,10 @@ namespace QuanLyQuanKaraoke.Forms
 
             dataGridView1.DataSource = bs;
 
+
         }
 
+        
         private void btnThem_Click(object sender, EventArgs e)
         {
             xulyThem = true;
@@ -197,7 +200,7 @@ namespace QuanLyQuanKaraoke.Forms
 
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            if (dataGridView1.Columns[e.ColumnIndex].Name == "HinhAnh")
+            /*if (dataGridView1.Columns[e.ColumnIndex].Name == "HinhAnh")
             {
                 var fileName = dataGridView1.Rows[e.RowIndex].DataBoundItem as DanhSachPhong;
 
@@ -211,6 +214,23 @@ namespace QuanLyQuanKaraoke.Forms
                         {
                             e.Value = new Bitmap(imgTemp, 40, 40);
                         }
+                    }
+                }
+            }*/
+            if (dataGridView1.Columns[e.ColumnIndex].Name == "HinhAnh")
+            {
+                if (e.Value != null)
+                {
+                    string fileName = e.Value.ToString();
+                    string path = Path.Combine(imagesFolder, fileName);
+
+                    if (File.Exists(path))
+                    {
+                        Image img = Image.FromFile(path);
+
+                        e.Value = new Bitmap(img, 60, 60); // resize
+
+                        img.Dispose(); // giải phóng
                     }
                 }
             }

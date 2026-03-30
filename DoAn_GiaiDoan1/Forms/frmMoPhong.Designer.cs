@@ -84,7 +84,7 @@
             // 
             AutoScaleDimensions = new SizeF(16F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1952, 242);
+            ClientSize = new Size(1952, 228);
             Controls.Add(btnMoPhong);
             Controls.Add(label1);
             Controls.Add(cbKhachHang);

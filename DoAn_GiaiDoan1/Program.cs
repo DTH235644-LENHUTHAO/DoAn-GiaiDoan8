@@ -1,4 +1,5 @@
 using QuanLyQuanKaraoke.Forms;
+using QuanLyQuanKaraoke.Reports;
 
 namespace QuanLyQuanKaraoke
 {

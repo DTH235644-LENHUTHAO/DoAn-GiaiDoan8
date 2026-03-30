@@ -193,6 +193,7 @@
             mnuThongKeDoanhThu.Name = "mnuThongKeDoanhThu";
             mnuThongKeDoanhThu.Size = new Size(366, 44);
             mnuThongKeDoanhThu.Text = "Thống kê doanh thu";
+            mnuThongKeDoanhThu.Click += mnuThongKeDoanhThu_Click;
             // 
             // mnuThongKeDichVu
             // 
