@@ -115,70 +115,71 @@
             // mnuNhanVien
             // 
             mnuNhanVien.Name = "mnuNhanVien";
-            mnuNhanVien.Size = new Size(360, 44);
+            mnuNhanVien.Size = new Size(426, 44);
             mnuNhanVien.Text = "Nhân viên";
             mnuNhanVien.Click += mnuNhanVien_Click;
             // 
             // mnuKhachHang
             // 
             mnuKhachHang.Name = "mnuKhachHang";
-            mnuKhachHang.Size = new Size(360, 44);
+            mnuKhachHang.Size = new Size(426, 44);
             mnuKhachHang.Text = "Khách hàng";
             mnuKhachHang.Click += mnuKhachHang_Click;
             // 
             // mnuPhong
             // 
             mnuPhong.Name = "mnuPhong";
-            mnuPhong.Size = new Size(360, 44);
+            mnuPhong.Size = new Size(426, 44);
             mnuPhong.Text = "Phòng";
             mnuPhong.Click += mnuPhong_Click;
             // 
             // mnuLoaiPhong
             // 
             mnuLoaiPhong.Name = "mnuLoaiPhong";
-            mnuLoaiPhong.Size = new Size(360, 44);
+            mnuLoaiPhong.Size = new Size(426, 44);
             mnuLoaiPhong.Text = "Loại phòng";
             mnuLoaiPhong.Click += mnuLoaiPhong_Click;
             // 
             // mnuDanhSachPhong
             // 
             mnuDanhSachPhong.Name = "mnuDanhSachPhong";
-            mnuDanhSachPhong.Size = new Size(360, 44);
+            mnuDanhSachPhong.Size = new Size(426, 44);
             mnuDanhSachPhong.Text = "Danh sách phòng";
             mnuDanhSachPhong.Click += mnuDanhSachPhong_Click;
             // 
             // mnuDichVu
             // 
             mnuDichVu.Name = "mnuDichVu";
-            mnuDichVu.Size = new Size(360, 44);
+            mnuDichVu.Size = new Size(426, 44);
             mnuDichVu.Text = "Dịch vụ";
             mnuDichVu.Click += mnuDichVu_Click;
             // 
             // mnuDanhSachHoaDon
             // 
             mnuDanhSachHoaDon.Name = "mnuDanhSachHoaDon";
-            mnuDanhSachHoaDon.Size = new Size(360, 44);
-            mnuDanhSachHoaDon.Text = "Danh sách hóa đơn";
+            mnuDanhSachHoaDon.Size = new Size(426, 44);
+            mnuDanhSachHoaDon.Text = "Danh sách hóa đơn đã lập";
             mnuDanhSachHoaDon.Click += mnuDanhSachHoaDon_Click;
             // 
             // mnuKhuyenMai
             // 
             mnuKhuyenMai.Name = "mnuKhuyenMai";
-            mnuKhuyenMai.Size = new Size(360, 44);
+            mnuKhuyenMai.Size = new Size(426, 44);
             mnuKhuyenMai.Text = "Khuyến mãi";
             mnuKhuyenMai.Click += mnuKhuyenMai_Click;
             // 
             // mnuThanhToan
             // 
             mnuThanhToan.Name = "mnuThanhToan";
-            mnuThanhToan.Size = new Size(360, 44);
+            mnuThanhToan.Size = new Size(426, 44);
             mnuThanhToan.Text = "Thanh toán";
+            mnuThanhToan.Click += mnuThanhToan_Click;
             // 
             // mnuLichSuDungPhong
             // 
             mnuLichSuDungPhong.Name = "mnuLichSuDungPhong";
-            mnuLichSuDungPhong.Size = new Size(360, 44);
-            mnuLichSuDungPhong.Text = "Lịch sử dùng phòng";
+            mnuLichSuDungPhong.Size = new Size(426, 44);
+            mnuLichSuDungPhong.Text = "Lập hóa đơn";
             mnuLichSuDungPhong.Click += mnuLichSuDungPhong_Click;
             // 
             // báoCáoToolStripMenuItem

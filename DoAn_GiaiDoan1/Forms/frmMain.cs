@@ -32,6 +32,7 @@ namespace QuanLyQuanKaraoke.Forms
         frmDatPhong datPhong = null;
         frmDanhSachHoaDon danhsachhoaDon = null;
         frmThongKeDoanhThu thongKeDoanhThu = null;
+        frmThanhToan thanhToan = null;
         string TenNhanVien = "";
         public static int NVID = 0;
         private void mnuNhanVien_Click(object sender, EventArgs e)
@@ -291,6 +292,18 @@ namespace QuanLyQuanKaraoke.Forms
             }
             else
                 thongKeDoanhThu.Activate();
+        }
+
+        private void mnuThanhToan_Click(object sender, EventArgs e)
+        {
+            if (thanhToan == null || thanhToan.IsDisposed)
+            {
+                thanhToan = new frmThanhToan();
+                thanhToan.MdiParent = this;
+                thanhToan.Show();
+            }
+            else
+                thanhToan.Activate();
         }
     }
 }

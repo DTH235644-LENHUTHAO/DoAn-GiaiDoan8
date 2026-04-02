@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            btnThanhToan = new Button();
             groupBox2 = new GroupBox();
             dataGridView1 = new DataGridView();
             ID = new DataGridViewTextBoxColumn();
@@ -46,6 +45,7 @@
             TongTien = new DataGridViewTextBoxColumn();
             XemChiTiet = new DataGridViewLinkColumn();
             sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
+            btnInHoaDon = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -53,21 +53,12 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(btnThanhToan);
+            groupBox1.Controls.Add(btnInHoaDon);
             groupBox1.Location = new Point(25, 22);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(1948, 141);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            // 
-            // btnThanhToan
-            // 
-            btnThanhToan.Location = new Point(1706, 56);
-            btnThanhToan.Name = "btnThanhToan";
-            btnThanhToan.Size = new Size(188, 46);
-            btnThanhToan.TabIndex = 0;
-            btnThanhToan.Text = "Thanh toán";
-            btnThanhToan.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -190,6 +181,16 @@
             sqlCommand1.CommandTimeout = 30;
             sqlCommand1.EnableOptimizedParameterBinding = false;
             // 
+            // btnInHoaDon
+            // 
+            btnInHoaDon.Location = new Point(1613, 53);
+            btnInHoaDon.Name = "btnInHoaDon";
+            btnInHoaDon.Size = new Size(192, 46);
+            btnInHoaDon.TabIndex = 0;
+            btnInHoaDon.Text = "In hóa đơn";
+            btnInHoaDon.UseVisualStyleBackColor = true;
+            btnInHoaDon.Click += btnInHoaDon_Click;
+            // 
             // frmDanhSachHoaDon
             // 
             AutoScaleDimensions = new SizeF(19F, 36F);
@@ -213,7 +214,6 @@
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
-        private Button btnThanhToan;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn DatPhongID;
@@ -228,5 +228,6 @@
         private DataGridViewTextBoxColumn ThoiGianLap;
         private DataGridViewTextBoxColumn TongTien;
         private DataGridViewLinkColumn XemChiTiet;
+        private Button btnInHoaDon;
     }
 }

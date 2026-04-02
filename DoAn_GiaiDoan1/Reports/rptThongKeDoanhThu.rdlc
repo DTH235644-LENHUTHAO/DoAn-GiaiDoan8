@@ -302,7 +302,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox6">
+                    <Textbox Name="TenPhong">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -323,7 +323,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox6</rd:DefaultName>
+                      <rd:DefaultName>TenPhong</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -372,7 +372,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -469,7 +468,7 @@
         <Top>1.8886cm</Top>
         <Left>0.34396cm</Left>
         <Height>1.2cm</Height>
-        <Width>17.96885cm</Width>
+        <Width>17.96886cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>

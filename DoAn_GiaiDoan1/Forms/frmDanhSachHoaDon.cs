@@ -1,4 +1,5 @@
 ﻿using QuanLyQuanKaraoke.Data;
+using QuanLyQuanKaraoke.Reports;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -64,6 +65,20 @@ namespace QuanLyQuanKaraoke.Forms
 
                 frmChiTietHoaDon f = new frmChiTietHoaDon(hoaDonID);
                 f.ShowDialog();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInHoaDon_Click(object sender, EventArgs e)
+        {
+            id = Convert.ToInt32(dataGridView1.CurrentRow.Cells["ID"].Value.ToString());
+            using (frmInHoaDon inHoaDon = new frmInHoaDon(id))
+            {
+                inHoaDon.ShowDialog();
             }
         }
     }

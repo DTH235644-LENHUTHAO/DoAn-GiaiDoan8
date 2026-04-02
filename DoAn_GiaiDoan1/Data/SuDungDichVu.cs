@@ -25,6 +25,21 @@ namespace QuanLyQuanKaraoke.Data
         public string TenDV { get; set; }
         public int SoLuong { get; set; }
         public decimal DonGia { get; set; }
+
+
+    }
+
+    [NotMapped]
+    public class DanhSachSuDungDichVu2
+    {
+        public int ID { get; set; }
+        public int DatPhongID { get; set; }
+        public int DichVuID { get; set; }
+        public string TenDV { get; set; }
+        public int SoLuong { get; set; }
+        public decimal DonGia { get; set; }
+        public decimal ThanhTien { get; set; }
+
     }
 
 }
